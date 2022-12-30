@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata xmlns="http://www.demandware.com/xml/impex/metadata/2006-10-31">
-    <custom-type type-id="XXXXX">
-        <display-name xml:lang="x-default">XXXXX</display-name>
+    <custom-type type-id="Fake_Report">
+        <display-name xml:lang="x-default">Fake_Report</display-name>
         <staging-mode>no-staging</staging-mode>
         <storage-scope>site</storage-scope>
         <retention-days>3</retention-days>
-        <key-definition attribute-id="XXXXX">
+        <key-definition attribute-id="email">
             <type>string</type>
+            <mandatory-flag>true</mandatory-flag>
             <min-length>0</min-length>
         </key-definition>
         <attribute-definitions>
 
-            <attribute-definition attribute-id="XXXXX">
-                <display-name xml:lang="x-default">XXXXX</display-name>
+            <attribute-definition attribute-id="Link">
+                <display-name xml:lang="x-default">Link</display-name>
                 <type>string</type>
                 <localizable-flag>false</localizable-flag>
                 <mandatory-flag>false</mandatory-flag>
@@ -20,26 +21,13 @@
                 <min-length>0</min-length>
             </attribute-definition>
           
-            <attribute-definition attribute-id="XXXXX">
-                <display-name xml:lang="x-default">XXXXX</display-name>
-                <type>enum-of-string</type>
+            <attribute-definition attribute-id="Commento">
+                <display-name xml:lang="x-default">Commento</display-name>
+                <type>string</type>
                 <localizable-flag>false</localizable-flag>
                 <mandatory-flag>false</mandatory-flag>
                 <externally-managed-flag>false</externally-managed-flag>
-                <value-definitions>
-                    <value-definition>
-                        <display xml:lang="x-default">PENDING</display>
-                        <value>PENDING</value>
-                    </value-definition>
-                    <value-definition>
-                        <display xml:lang="x-default">PROCESSED</display>
-                        <value>PROCESSED</value>
-                    </value-definition>
-                    <value-definition>
-                        <display xml:lang="x-default">PROCESS</display>
-                        <value>PROCESS</value>
-                    </value-definition>
-                </value-definitions>
+                <min-length>0</min-length>
             </attribute-definition>
            
         </attribute-definitions>
