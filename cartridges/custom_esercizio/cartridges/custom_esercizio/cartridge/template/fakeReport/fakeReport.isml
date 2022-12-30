@@ -1,0 +1,19 @@
+<isdecorate template="common/layout/page">
+    <isscript>
+        var assets = require('*/cartridge/scripts/assets.js');
+    </isscript>
+
+    <form action="${pdict.actionUrl}" method="POST" name="fakeReport">
+
+        <label for="fake-report-link">Inserisci qui il link della sorgente che utilizza il nostro brand illecitamente</label>
+        <input type="text" id="fake-report-link" name="fakeLink">
+
+        <label for="fake-report-email">Inserisci qui la tua mail</label>
+        <input type="email" id="fake-report-email" name="fakeEmail">
+
+        <label for="fake-report-comment">Descrivi qui il problema o indicaci la segnalazione</label>
+        <textarea name="fake-comment" id="fake-report-comment" cols="30" rows="10"></textarea>
+
+        <input type="submit">
+    </form>
+</isdecorate>
